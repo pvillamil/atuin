@@ -10,7 +10,7 @@ atuin init zsh
 
 See [installation](https://docs.atuin.sh/guide/installation/#installing-the-shell-plugin) for the exact line to add for your shell — the syntax differs between shells.
 
-Supported shells: `zsh`, `bash`, `fish`, `nu`, `xonsh`, `powershell`.
+Supported shells: `zsh`, `bash`, `fish`, `nu`, `xonsh`, `powershell`. See [Supported platforms](https://docs.atuin.sh/support/index.md) for what each tier means.
 
 ## What it sets up
 
@@ -34,10 +34,10 @@ eval "$(atuin init zsh --disable-up-arrow)"
 
 ## Environment variables
 
-| Variable                   | Effect                                                                                            |
-| -------------------------- | ------------------------------------------------------------------------------------------------- |
-| `ATUIN_NOBIND`             | If set to any value, binds no keys at all. Equivalent to passing every `--disable-*` flag.        |
-| `ATUIN_NO_BUILTIN_PREEXEC` | Bash only. Stops `atuin init bash` from auto-loading its bundled bash-preexec (Atuin >= 18.18.0). |
+| Variable                   | Effect                                                                                                     |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `ATUIN_NOBIND`             | If set to any value, binds no keys at all. Equivalent to passing every `--disable-*` flag.                 |
+| `ATUIN_NO_BUILTIN_PREEXEC` | Bash only. Stops `atuin init bash` from automatically loading its bundled bash-preexec (Atuin >= 18.18.0). |
 
 Binding no keys is useful when you want to choose the bindings yourself:
 
